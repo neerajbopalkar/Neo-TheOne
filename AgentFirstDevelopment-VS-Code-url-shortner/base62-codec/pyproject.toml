@@ -1,0 +1,52 @@
+[project]
+name = "base62-codec"
+version = "1.0.0"
+description = "A fast base 62 encoder/decoder library"
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+license = { text = "MIT" }
+keywords = ["base62", "encoding", "codec"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/neerajbopalkar/Neo-TheOne"
+Repository = "https://github.com/neerajbopalkar/Neo-TheOne.git"
+Issues = "https://github.com/neerajbopalkar/Neo-TheOne/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+python-version = "3.14"
+
+[tool.black]
+line-length = 88
+target-version = ["py314"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 88
+select = ["E", "F", "W", "I", "N", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=base62 --cov-report=html"
