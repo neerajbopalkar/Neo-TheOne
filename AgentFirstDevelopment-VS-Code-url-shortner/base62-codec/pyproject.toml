@@ -18,6 +18,9 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 
+[project.scripts]
+base62-cli = "cli:main"
+
 [project.urls]
 Homepage = "https://github.com/neerajbopalkar/Neo-TheOne"
 Repository = "https://github.com/neerajbopalkar/Neo-TheOne.git"
@@ -36,7 +39,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.uv]
-python-version = "3.14"
+required-version = ">=0.1.0"
+
+[tool.hatch.build.targets.wheel]
+packages = ["base62"]
 
 [tool.black]
 line-length = 88
