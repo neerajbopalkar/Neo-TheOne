@@ -1,41 +1,35 @@
-# 🕶️ Neo-TheOne | AI Engineering Workspace
+# AI Agent Practice Repository: NEO-THEONE
 
-Welcome to **The Construct**. This repository is a centralized workspace dedicated to mastering the intersection of traditional software engineering and modern AI orchestration.
+Welcome to my personal workspace for practicing **Agent-First Development** and **GitHub Copilot Customizations**. This repository tracks my journey from basic AI assistance to building autonomous, customized engineering agents.
 
-## 🚀 Workspace Overview
+## 🚀 Projects & Study Modules
 
-This repository is organized into three specialized pillars, each demonstrating a different facet of AI development.
+This repository is organized into specialized modules, each following a specific learning path from the VS Code Learn series.
 
-| Pillar                 | Focus                         | Core Tech                  |
-| :--------------------- | :---------------------------- | :------------------------- |
-| **[MAF](./MAF)**       | **Microsoft Agent Framework** | C#, .NET, Bot Framework    |
-| **[MCP](./MCP)**       | **Model Context Protocol**    | Python, Fastmcp, JSON-RPC  |
-| **[Skills](./Skills)** | **Copilot Agent Expertise**   | Markdown, System Prompting |
+### 1. [Agent-First Development: URL Shortener](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
 
----
+**Focus:** Mastering the transition from "Autocomplete" to "Autonomous Agents."
 
-## 📂 Project Deep Dives
+- **Core Concepts:** The Agent Formula (Harness, Model, Context, Tools, Prompt), Autopilot vs. Manual Approvals, and Session Forking.
+- **Practice App:** A fully functional URL Shortener built using Plan Mode and Autopilot.
+- **Redirection:** [View Detailed Notes & Practice Details](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
 
-### 🤖 [Microsoft Agent Framework (MAF)](./MAF)
+### 2. [Advanced Agent Customizations](./Custom-Agents-VS-Code/README.md)
 
-Building enterprise-grade agents within the Microsoft ecosystem. This section focuses on robust, typed agentic workflows using C# and the Bot Framework SDK to solve complex automation tasks.
+**Focus:** Tailoring the AI "brain" to follow specific standards and automate repetitive engineering tasks.
 
-### 🔌 [Model Context Protocol (MCP)](./MCP)
-
-Exploring the open standard for LLM-to-Data interoperability. Here, I develop custom MCP servers that allow AI models to safely interact with local databases, filesystems, and proprietary APIs.
-
-### 🧠 [Agent Skills](./Skills)
-
-Custom expertise modules for GitHub Copilot. These "Skills" act as architectural guardrails, teaching Copilot to follow specific design patterns (like SOLID and Clean Architecture) while I code.
+- **Core Concepts:** Custom Instructions (Passive Rules), Agent Skills (Portable Capabilities), Lifecycle Hooks (Auto-formatting), and Custom Personas.
+- **Practice App:** A "Repo Analyzer" that utilizes combined customizations to grade code quality against SOLID principles.
+- **Redirection:** [View Detailed Customization Guide](./Custom-Agents-VS-Code/README.md)
 
 ---
 
-## 🛠️ Technical Stack
+## 🛠️ Tech Stack & Tools
 
-- **Languages:** C#, Python, JavaScript, TypeScript
-- **AI Tools:** GitHub Copilot, Claude Desktop, OpenAI API
-- **Frameworks:** .NET 8+, Bot Framework, Fastmcp
+- **IDE:** Visual Studio Code
+- **AI:** GitHub Copilot (Claude 3.5 Sonnet / GPT-4o)
+- **Environment:** Python, FastAPI, SQLite, and GitHub Copilot CLI
 
----
+## 📖 How to Use This Repo
 
-> _"I'm trying to free your mind, Neo. But I can only show you the door. You're the one that has to walk through it."_
+This root directory serves as the entry point. For detailed study materials, code walkthroughs, and implementation notes, please navigate into the individual project folders linked above.
