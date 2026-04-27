@@ -4,6 +4,28 @@ This repository contains practice projects and notes based on the **VS Code Lear
 
 ---
 
+## Output of the agent
+
+![alt text](image.png)
+
+### Prompt
+
+Let's create a URL shortener using Python 3.14, SQL lite 3
+built-in Python module, and use UV for dependency
+management. Also create a very simple frontend with
+HTML and static files. The frontend should have a field
+where we can type in the URL we want shortened. And
+then at the bottom of that, just an element that we can
+type in the URL.
+
+That will display the shortened URL that we can click on,
+and that will be opened in another tab. Let's keep the UI
+minimal.
+
+### Steering prompt
+
+Please add tests as well
+
 ## 1. The Core Formula for Agent Success
 
 Success with AI agents is not magic; it is a result of five distinct components working in harmony:

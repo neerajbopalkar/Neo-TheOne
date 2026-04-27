@@ -123,13 +123,18 @@ dmypy.json
 .pyre/
 
 # UV
-.uv
-uv.lock
+.uv/
+
+# Database
+*.db
+urls.db
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# OS
 .DS_Store
+Thumbs.db
