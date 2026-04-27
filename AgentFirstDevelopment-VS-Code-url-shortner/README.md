@@ -1,49 +1,81 @@
-# 🌊 Agent-First Development & Vibe Coding
+# Agent-First Development with VS Code and GitHub Copilot
 
-This folder documents transition into **Agent-First Development** and the emerging paradigm of **Vibe Coding**.
-
-Inspired by the [Agent-First Dev Series](https://www.youtube.com/playlist?list=PLj6YeMhvp2S4l1_iP4-pS6p7lgyqKo-Ix), this section explores how to build complex systems by prioritizing **Intent** over **Syntax**.
+This repository contains practice projects and notes based on the **VS Code Learn: Agent-First Development** series. This document serves as a comprehensive guide to the concepts, workflows, and tools required to transition from basic AI code completion to fully agentic software development.
 
 ---
 
-## 🛠️ Technical Syllabus (Workflow Mastery)
+## 1. The Core Formula for Agent Success
 
-Based on the official VS Code Agent-First series, I am implementing the following workflow:
+Success with AI agents is not magic; it is a result of five distinct components working in harmony:
 
-### 1. Agent Sessions & Environment
+- **The Harness:** This is the environment (VS Code + GitHub Copilot Chat) that provides the "wiring." It allows the AI model to communicate with your file system, terminal, and external tools.
+- **The Model:** The reasoning engine (e.g., Claude 3.5 Sonnet, GPT-4o). Different models offer various "Thinking Effort" levels (Low, Medium, High) to balance response speed with architectural depth.
+- **Context:** The specific information provided to the model. This includes open files, directory structures, and project-specific instructions provided via the `#` symbol or the context picker.
+- **Tools:** Capabilities enabled for the agent, such as `terminal` (running commands), `file-edit` (writing code), and `web-search`. Agents use these to perform actions rather than just generating text.
+- **Prompts:** The intent and instructions you provide. High-quality prompts are detailed enough to define the goal but flexible enough to let the agent determine the best implementation.
 
-- **Agent Mode:** Transitioning from chat-based snippets to full "Agent Mode" where the AI has permission to edit files and run commands.
-- **Sessions:** Managing isolated agent sessions to maintain clean context windows.
-- **Control:** Reviewing and controlling agent changes using the built-in diff views to ensure architectural integrity.
+## 2. Session Management & Control
 
-### 2. Debugging & Observability
+Managing how an agent interacts with your codebase is critical for maintaining safety and quality.
 
-- **Chat Debug View:** Using internal logs to see exactly how the agent is "thinking."
-- **Agent Debug Logs:** Analyzing the step-by-step execution to troubleshoot where a "vibe" might be drifting from the intent.
+- **Approval Levels:**
+  - **Default Approvals:** The agent asks for permission before running terminal commands or significant tool calls.
+  - **Bypass Approvals:** Tools are auto-approved, but the agent will stop if it needs clarification from the user.
+  - **Autopilot:** The agent is fully autonomous, making its own decisions to complete the task until it reaches the goal.
+- **Context Window & Tokens:** Every model has a memory limit measured in tokens. The "Context Window" view in VS Code helps monitor how much memory is consumed by system instructions, tool definitions, and user history.
+- **Compact Conversation:** A feature that summarizes long chat histories into essential implementation details, freeing up space in the context window for more complex tasks.
 
-### 3. Customization & Expertise (The "Construct")
+## 3. Steering and Refining Work
 
-- **Custom Instructions:** Setting the global "Personality" and "Rules" for the agent.
-- **Agent Skills:** Providing domain-specific expertise (e.g., C# Clean Architecture) that the agent can "invoke" when needed.
-- **Hooks & Prompt Files:** Moving away from repetitive prompting toward **Prompt-as-Code**, using hooks to trigger specific agent behaviors based on the file context.
+Agents are collaborative; you can steer them in real-time as they work.
+
+- **Steering:** Instead of waiting for a task to finish, you can provide a "Steer" message to yield the current action and redirect the agent's logic (e.g., "Actually, use a dark theme instead").
+- **Editing Prompts:** Editing a previous message allows you to correct the initial instruction. This triggers a "Restore Checkpoint," undoing the agent's work back to that point so it can restart with the correct information.
+- **Forking Sessions:** If you want to explore an alternative architecture (e.g., "What if this CLI was a Fast API?"), you can fork the current session to a new tab. This preserves your original work while allowing for safe experimentation.
+- **Checkpoints:** Automated "Save States" created by VS Code. You can restore your codebase to a specific checkpoint if an agent's changes go in an undesired direction.
+
+## 4. Operational Modes & Environments
+
+Agents can run in different "modes" and on different "compute" platforms.
+
+- **Interaction Modes:**
+  - **Ask Mode:** Best for general Q&A and explaining existing code without making changes.
+  - **Plan Mode:** The agent acts as an architect, discussing the strategy and breakdown of a task before writing any code.
+  - **Agent Mode:** The implementation phase where the agent actively uses tools to edit files and run commands.
+- **Execution Environments:**
+  - **Local:** The agent runs on your machine using your local resources.
+  - **Cloud (GitHub Platform):** The agent runs on GitHub’s infrastructure. This is ideal for asynchronous work; you can start a task in the cloud and move to another local task while it finishes.
+  - **Copilot CLI:** A terminal-based agent experience for developers who prefer staying in the command line.
+
+## 5. Debugging and Diagnostics
+
+When an agent fails or behaves unexpectedly, VS Code provides deep transparency tools.
+
+- **Agent Debug Logs:** A chronological log of every "thought," tool call, and internal hook triggered during a session. It helps identify exactly where a skill or instruction failed to load.
+- **Agent Flowchart:** A visual representation of the agent's decision-making process, showing the sequence of tool calls and model responses.
+- **Chat Debug View:** Provides the raw data (JSON) sent to the LLM. This is used to inspect the exact system prompts, user memory preferences, and token usage for every turn.
+- **Troubleshoot Command:** Using `/troubleshoot` allows you to ask the agent about its own internal state, such as where it is loading custom skills from.
 
 ---
 
-## 🚀 The AFD Workflow Loop
+## 6. Practical Workflow: URL Shortener Example
 
-1. **Initialize Session:** Start an Agent Session with a clear **Intent**.
-2. **Inject Context:** Reference relevant **Skills** and **Prompt Files** to ground the agent.
-3. **Vibe Code:** Allow the Agent to generate implementations while monitoring the **Chat Debug View**.
-4. **Verify & Review:** Use the **Control UI** to accept/reject changes and validate against **Hooks**.
+The culmination of these concepts is seen in the "Plan-to-Implementation" workflow:
 
----
-
-## 🔬 Experiments & Projects
-
-- **Lab 01: Agent Mode App Build:** Building a full-stack module using primarily Agent Mode (Ep 6).
-- **Lab 02: Custom Skill Development:** Creating `.md` based skills for specialized C#/.NET tasks.
-- **Lab 03: Observability Lab:** Troubleshooting a complex logic error using the Agent Debug Logs.
+1.  **Define Intent:** Start in **Plan Mode** to outline a URL Shortener using specific technologies (e.g., Python 3.14, SQLite, UV).
+2.  **Clarify:** Have a back-and-forth conversation to define features like Base62 encoding and UI preferences.
+3.  **Implement:** Switch to **Autopilot** to let the agent initialize the project, create the database schema, write the FastAPI backend, and design a dark-themed CSS frontend.
+4.  **Verify:** The agent runs its own tests in the terminal to ensure the URL routing and redirection work correctly.
 
 ---
 
-> _"The goal isn't just to code with AI; it's to build a system where the AI understands the architecture as well as the engineer does."_
+### References
+
+- [Introduction to Agent-First Development](https://www.youtube.com/watch?v=uu4sf8z9n8c)
+- [Your First Agent Session in Action](https://www.youtube.com/watch?v=WcN74XvZGes)
+- [Reviewing and Controlling Agent Changes](https://www.youtube.com/watch?v=oFSJs6RnFt4)
+- [Agent Sessions and Environments](https://www.youtube.com/watch?v=0CsKOO7d35I)
+- [Agent Debug Logs and Chat Debug View](https://www.youtube.com/watch?v=aW2jlbbUREc)
+- [Demo: Build Your First App with Agent Mode](https://www.youtube.com/watch?v=hmfldW7dmgw)
+  readme.md
+  Displaying readme.md.
