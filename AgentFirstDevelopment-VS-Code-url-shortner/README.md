@@ -26,6 +26,10 @@ minimal.
 
 Please add tests as well
 
+## Component Diagram
+
+![alt text](image-1.png)
+
 ## 1. The Core Formula for Agent Success
 
 Success with AI agents is not magic; it is a result of five distinct components working in harmony:
