@@ -10,6 +10,12 @@ This diagram visualizes how the different customization layers (Instructions, Pr
 
 ![alt text](image.png)
 
+# Prompts
+
+## Solid Principles
+
+/create-instructions please create instructions for this workspace for applying solid principles for javascript while writing or refactoring the code. After aplying solid principle during code generation or refactoring, which principle(s) were applied and where.
+
 ## 1. Agent Customizations UI
 
 The **Customizations UI** is the "Mission Control" for your AI workflows in VS Code. It provides a centralized dashboard where you can manage all instructions, skills, agents, prompts, and hooks without digging through hidden folders.
