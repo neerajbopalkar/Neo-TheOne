@@ -4,6 +4,14 @@ This document serves as a comprehensive reference for customizing GitHub Copilot
 
 ---
 
+## Chart with deep understanding of different customization options
+
+<img width="1426" height="768" alt="image" src="https://github.com/user-attachments/assets/78503b22-36c7-4ea4-811f-aa1ade4ec098" />
+---
+
+<img width="1358" height="450" alt="image" src="https://github.com/user-attachments/assets/3bbff5ef-2ba0-4aac-87cc-3e8db211cf61" />
+
+---
 ## Diagram
 
 This diagram visualizes how the different customization layers (Instructions, Prompts, Agents, Skills, and Hooks) interact with each other and the core AI engine within VS Code.
