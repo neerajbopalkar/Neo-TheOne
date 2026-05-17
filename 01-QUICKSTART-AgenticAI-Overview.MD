@@ -184,9 +184,7 @@ sequenceDiagram
     Agent->>Memory: Store: "Action A with context X = success"
     Agent->>LLM: Analyze outcome
     LLM->>Agent: Learn: when context is X, action A is good
-    Agent->>Memory: Update knowledge base
-    
-    next_time: Next time similar context appears
+    Agent->>Memory: Update knowledge base next_time Next time similar context appears
     Agent->>Memory: Retrieve learned experience
     Memory->>Agent: Action A worked before in similar cases
     Agent->>Tool: Try action A again
