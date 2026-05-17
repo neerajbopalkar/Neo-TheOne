@@ -6,7 +6,7 @@ Welcome to my personal workspace for practicing **Agent-First Development** and 
 
 This repository is organized into specialized modules, each following a specific learning path from the VS Code Learn series.
 
-### 1. [QuickStart - Agentic AI Overview](01-QUICKSTART-AgenticAI-Overview.md)
+### 1. [QuickStart - Agentic AI Overview](./01-QUICKSTART-AgenticAI-Overview.md)
 
 ### 2. [Agent-First Development: URL Shortener](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
 
