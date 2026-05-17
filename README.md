@@ -6,7 +6,9 @@ Welcome to my personal workspace for practicing **Agent-First Development** and 
 
 This repository is organized into specialized modules, each following a specific learning path from the VS Code Learn series.
 
-### 1. [Agent-First Development: URL Shortener](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
+### 1. [QuickStart - Agentic AI Overview](01-QUICKSTART-AgenticAI-Overview.md)
+
+### 2. [Agent-First Development: URL Shortener](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
 
 **Focus:** Mastering the transition from "Autocomplete" to "Autonomous Agents."
 
@@ -14,7 +16,7 @@ This repository is organized into specialized modules, each following a specific
 - **Practice App:** A fully functional URL Shortener built using Plan Mode and Autopilot.
 - **Redirection:** [View Detailed Notes & Practice Details](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
 
-### 2. [Advanced Agent Customizations](./Custom-Agents-VS-Code/README.md)
+### 3. [Advanced Agent Customizations](./Custom-Agents-VS-Code/README.md)
 
 **Focus:** Tailoring the AI "brain" to follow specific standards and automate repetitive engineering tasks.
 
