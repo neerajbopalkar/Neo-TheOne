@@ -1,6 +1,6 @@
 # AI Agent Practice Repository: NEO-THEONE
 
-Welcome to my personal workspace for practicing **Agent-First Development** and **GitHub Copilot Customizations**. This repository tracks my journey from basic AI assistance to building autonomous, customized engineering agents.
+This repository tracks my journey from basic AI assistance to building autonomous, customized engineering agents covering **Agentic AI fundamentals**, **Custom Agents & Agents First development in VS Code**  and **Building MCP Server**.
 
 ## 🚀 Projects & Study Modules
 
