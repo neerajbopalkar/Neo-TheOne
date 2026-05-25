@@ -8,6 +8,12 @@ This repository is organized into specialized modules, each following a specific
 
 ### 1. [QuickStart - Agentic AI Overview](./01-QUICKSTART-AgenticAI-Overview.MD)
 
+**Focus:** Understanding the fundamentals of Agentic AI and the transition from code completion to autonomous agents.
+
+- **Core Concepts:** What makes an agent autonomous, the Agent Formula, AI-driven development workflows, and leveraging GitHub Copilot for intelligent automation.
+- **Key Learning:** Building blocks for agent-first development and introduction to VS Code customization for AI workflows.
+- **Redirection:** [View Quickstart Guide](./01-QUICKSTART-AgenticAI-Overview.MD)
+
 ### 2. [Agent-First Development: URL Shortener](./AgentFirstDevelopment-VS-Code-url-shortner/README.md)
 
 **Focus:** Mastering the transition from "Autocomplete" to "Autonomous Agents."
@@ -24,13 +30,24 @@ This repository is organized into specialized modules, each following a specific
 - **Practice App:** A "Repo Analyzer" that utilizes combined customizations to grade code quality against SOLID principles.
 - **Redirection:** [View Detailed Customization Guide](./Custom-Agents-VS-Code/README.md)
 
+### 4. [Model Context Protocol (MCP) Server - C#](./MCP/README.md)
+
+**Focus:** Building MCP servers with C# and .NET to extend GitHub Copilot capabilities.
+
+- **Core Concepts:** Model Context Protocol fundamentals, C# SDK integration, custom tool creation, and Docker containerization.
+- **Practice App:** A fully functional MCP server built with C# that demonstrates how to expose custom tools to GitHub Copilot and integrate with containerized environments.
+- **Key Features:** Tools running via dotnet CLI, Docker containerization, and registry deployment.
+- **Redirection:** [View Detailed MCP Implementation Guide](./MCP/README.md)
+
 ---
 
 ## 🛠️ Tech Stack & Tools
 
 - **IDE:** Visual Studio Code
 - **AI:** GitHub Copilot (Claude 3.5 Sonnet / GPT-4o)
-- **Environment:** Python, FastAPI, SQLite, and GitHub Copilot CLI
+- **Backend:** Python, FastAPI, SQLite, C#, .NET 8
+- **Protocols & Tools:** Model Context Protocol (MCP), GitHub Copilot CLI
+- **DevOps & Containerization:** Docker, Docker Registry
 
 ## 📖 How to Use This Repo
 
