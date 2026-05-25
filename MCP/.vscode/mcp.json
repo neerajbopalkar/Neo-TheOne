@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "NeoMCP": {
+            "type": "stdio",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "C:\\Users\\neera\\source\\repos\\Neo-TheOne\\MCP\\NeoMCP\\NeoMCP.csproj"
+            ]
+        }
+    },
+    "inputs": []
+}
