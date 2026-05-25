@@ -1,14 +1,26 @@
 {
-    "servers": {
-        "NeoMCP": {
-            "type": "stdio",
-            "command": "dotnet",
-            "args": [
-                "run",
-                "--project",
-                "C:\\Users\\neera\\source\\repos\\Neo-TheOne\\MCP\\NeoMCP\\NeoMCP.csproj"
-            ]
-        }
-    },
-    "inputs": []
+	"servers": {
+		// "NeoMCP": {
+		// 	"type": "stdio",
+		// 	"command": "dotnet",
+		// 	"args": [
+		// 		"run",
+		// 		"--project",
+		// 		"C:\\Users\\neera\\source\\repos\\Neo-TheOne\\MCP\\NeoMCP\\NeoMCP.csproj"
+		// 	]
+		// },
+		"NeoMcpContainer": {
+			"command": "docker",
+			"args": [
+				"run",
+				"--rm",
+				"-i",
+				// "--entrypoint",
+				// "/NeoMCP",
+				"neerajbopalkar/neomcp:latest"
+			],
+			"env": {}
+		}
+	},
+	"inputs": []
 }
