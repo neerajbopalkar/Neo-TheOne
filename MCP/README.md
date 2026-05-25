@@ -98,6 +98,7 @@ sequenceDiagram
 - [GitHub - modelcontextprotocol/csharp-sdk: The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft. · GitHub](https://github.com/modelcontextprotocol/csharp-sdk)
 - [C# MCP SDK announcement](https://developer.microsoft.com/blog/microsoft-partners-with-anthropic-to-create-official-c-sdk-for-model-context-protocol)
 - [jamesmontemagno docker repository](https://hub.docker.com/u/jamesmontemagno)
+- [neerajbopalkar/neomcp - Docker Image](https://hub.docker.com/repository/docker/neerajbopalkar/neomcp/general)
 
 
 ## Results - Tools running with dotnet run command
